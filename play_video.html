@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="_css/estilo.css">
+</head>
+
+<body>
+
+    <video id="video1" width="480" height="270px" controls>
+        <source src="_media/Pexels Videos 3995.mp4" type="video/mp4">
+        <source src="_media/Pexels Videos 3995.ogg" type="video/ogg">
+      
+    </video><br>
+
+    <button id="play_pause" onclick="play_pause()"
+        style="background-color:darkblue;color:white;border-style:solid; border-width:1px; border-color:white; border-radius: 5px; font-size:11pt; font-family:Arial">
+        &nbsp;PLAY&nbsp;
+    </button>
+
+    <input class="cor" type="button" value="Ampliar" onclick="changeSize(720,405)">
+    &nbsp;&nbsp;
+    <input class="cor" type="button" value="Reduzir" onclick="changeSize(240,135)">
+    &nbsp;&nbsp;
+    <input class="cor" type="button" value="Tamanho Normal" onclick="changeSize(480,270)">
+
+    <input class="cor" type="button" value="Tela Cheia" onclick="telaCheia()">
+
+
+    <br>
+    <div><br>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('video1').volume+=0.1">Volume
+            +</button>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('video1').volume-=0.1">Volume
+            -</button>
+    </div>
+
+    <br>
+    <br><br><b>
+
+    </b>
+
+
+
+
+
+
+    <script src="_javascript/controle.js"></script>
+</body>
+
+</html>
